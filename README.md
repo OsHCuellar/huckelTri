@@ -3,9 +3,6 @@
 # huckelTri
 
 
-        Osvaldo Hernandez Cuellar
-
-
 FORTRAN program that computes and diagonalize the Hückel Hamiltonian for some molecules with with π delocalized electrons and python codes for its analysis. 
 
 ## Code structure
