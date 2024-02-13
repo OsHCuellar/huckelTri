@@ -1,6 +1,6 @@
 
 
-<p align="center"><img alt="qstack logo" align="center" src="images/HuckelTri_logo.png" width=100%></p>
+<p align="center"><img alt="qstack logo" align="center" src="images/HuckelTri_logo.png" width=66%></p>
 
 FORTRAN program that computes and diagonalize the Hückel Hamiltonian for some molecules with with π delocalized electrons and python codes for its analysis. 
 
