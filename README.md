@@ -1,19 +1,17 @@
 
 
-            /////////////////
-            // H U C K E L //
-            /////////////////
+# huckelTri
 
 
         Osvaldo Hernandez Cuellar
 
-_DESCRIPTION______________________________________________________________________________________________________________
 
-FORTRAN program that computes and diagonalize the Hückel Hamiltonian for some molecules with with π delocalized electrons 
+FORTRAN program that computes and diagonalize the Hückel Hamiltonian for some molecules with with π delocalized electrons and python codes for its analysis. 
 
-_STRUCTURE________________________________________________________________________________________________________________
+## Code structure
 
-/huckel/
+```bash
+/huckelTri/
     3triangulene.inp  
     Global.inp
     huckel
@@ -55,21 +53,27 @@ _STRUCTURE______________________________________________________________________
         readMakeInp.f90  
         types.f90  
         writting.f90    
+```
 
+## Usage
 
-_COMPILE_________________________________________________________________________________________________________________
+### Compile
 
 Because the program uses a subrotuine from the lapack, you have to modify the FFLAGS2 on the makefile to link correclty
 the lapack library on your computer with this program.
 
 To install lapack and libblas:
-    $ sudo apt-get install libblas-dev liblapack-dev
+```bash
+sudo apt-get install libblas-dev liblapack-dev
+```
 
 After doing this you just have to exectute the makefile by writting:
-    $ make 
-on the directory '/huckel/' . This will create the executable 'huckel' on the same directory.
+```bash
+make 
+```
+on the directory `/huckelTri/` . This will create the executable `huckelTri` on the same directory.
 
-_INPUT____________________________________________________________________________________________________________________
+### Input
 
 The program can create and diagonalize the Hückel Hamiltonian for: 
 
@@ -79,7 +83,7 @@ The program can create and diagonalize the Hückel Hamiltonian for:
         2) polyene
         3) triangulene 
 
-To choose which of the system it is going to solve you have to modify the file 'Global.inp', where you can choose the
+To choose which of the system it is going to solve you have to modify the file `Global.inp`, where you can choose the
 type of system, if you want to debug the program, and the diagonalization method.
 
 After chossing the method, you have to verify and modify the input file for the system you want to work with. The input 
@@ -94,34 +98,34 @@ file for each system listed above ()in the same order are:
                 *** NOTE: all the input files contains the explanations and instructions on 
                     how to modify them, and what does each variable represents.
 
-_OUTPUT_____________________________________________________________________________________________________________________
+### Output
 
-In the '/huckel/output/' directory are going to be all the outpit files as well as the input files used to generate
+In the `/huckelTri/output/` directory are going to be all the outpit files as well as the input files used to generate
 them. The EnergyLvl.dat file contains all the energy levels in ascending order, while inside the
-'huckel/output/Eigenvectors/' directory, there is one file for each energy level called
-'/huckel/output/Rigenvectors/EigenvectorsN.dat', where the N indicates the energy level to which it corresponds. Inside
-the 'EigenvectorsN.dat', there are all the coefficients of the spin wavefunction for the corresponding energy level.
+`huckelTri/output/Eigenvectors/` directory, there is one file for each energy level called
+`/huckelTri/output/Rigenvectors/EigenvectorsN.dat`, where the N indicates the energy level to which it corresponds. Inside
+the `EigenvectorsN.dat`, there are all the coefficients of the spin wavefunction for the corresponding energy level.
 
-Regarding the input files created in the '/huckel/output/' directory, besides the 'Global.inp' and the corresponding
-input file for the system, there is always going to be a '0explicit.inp' file. This file is created automatically and it
+Regarding the input files created in the `/huckel/output/` directory, besides the `Global.inp` and the corresponding
+input file for the system, there is always going to be a `0explicit.inp` file. This file is created automatically and it
 correspond to the system specified before, whether you specify it explictly or not. This file can be helpful sometimes 
 because it contains information about your system that might not be specified before, like for example the total number 
 of atoms, the total number of bonds, among others.
 
-_EXECUTE_____________________________________________________________________________________________________________________
+### Execute
 
-To execute the program you just have to execute './huckel' program created after compiling, inside the '/huckel/'
+To execute the program you just have to execute `./huckelTri` program created after compiling, inside the `/huckelTri/`
 directory. To change the system, you just have to modify the input files, recompiling is not necesarry. 
 
-_EXTRA________________________________________________________________________________________________________________________
+### Analize results
 
-As an extra, to analize some of the results for the triangulene, inside the '/huckel/analysis/' directory, there are
+As an extra, to analize some of the results for the triangulene, inside the `/huckelTri/analysis/` directory, there are
 some shell scripts and python program to help the analysis of the result. 
     0coefflvl.py
-        python code that creates the '0coefflvl.dat' file which contains the a list of the energy levels with the total
+        python code that creates the `0coefflvl.dat` file which contains the a list of the energy levels with the total
         number of coefficients equal to zero for the spin wavefunction for the given energy level. To exectute it it has
         to be in the directory of the Eigenvectors that contains all the eigenvctors and int eh previous directory it
-        has to be the corresponfing 'oexplicit.dat' file.
+        has to be the corresponfing `oexplicit.dat` file.
     visualization3.py
         python code that makes a visual representation of the spin wave function of the trinalgule specified inside it, 
         on the variable "eigenVec".
