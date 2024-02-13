@@ -1,0 +1,33 @@
+ input title
+
+ 3 # TYPE
+ F # DEBUG
+ 0 # DIAGONALIZATION:
+ 		# 0 = DSYEV subroutine from LAPACK. Recomended if possible
+		# 1 = Jacobi Method 
+
+
+ #///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ #\  P O S S I B L E   T Y P E S :                                                                                  \
+ #/                                                                                                                 /
+ #\  TYPE = 0                                                                                                       \
+ #/ 		Define explicitly all the variables.                                                                    /
+ #\ 		INPUT FILE : 0explicit.inp                                                                              \
+ #/ 	                                                                                                            /
+ #\  TYPE = 1                                                                                                       \
+ #/  		Autogenerate an open NANOTUBE with the information given on the input file                              /
+ #\  		INPUT FILE : 1nanotube.inp                                                                              \
+ #/                                                                                                                 /
+ #\  TYPE = 2                                                                                                       \
+ #/  		Autogenerate a POLYENE with the information given on the input file                                     /
+ #\  		INPUT FILE : 2polyene.inp                                                                               \
+ #/                                                                                                                 /
+ #\  TYPE = 3                                                                                                       \
+ #/  		Autogenerate a TRIANGULENE with the information given on the input file                                 /
+ #\  		INPUT FILE : 3triangulene.inp                                                                           \
+ #/                                                                                                                 /
+ #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+

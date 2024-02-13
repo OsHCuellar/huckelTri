@@ -1,0 +1,51 @@
+ input title
+
+	7	# L
+	1	# l1
+	1 	# l2
+ 	0 	# l3
+
+    0 #Alpha value
+    -1 #Beta value
+
+		################
+		# (L|l1,l2,l3) #
+		################
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#%                                                                                                                 %
+#%   EXAMPLE :                                                                                                     %
+#%-----------------------------------------------------------------------------------------------------------------%
+#%   (4|0,0,0)                                                                                                     %
+#%                                                                                                                 %
+#%            c                                                                                                    %
+#%           / \                                                                                                   %
+#%  	    c   c                                                                                                  %
+#%          |   |                                                                                                  %
+#%  	    c   c                                                                                                  %
+#%         / \ / \                                                                                                 %
+#%        c   c   c                                                                                                %
+#%        |	 |   |                                                                                                 %
+#%        c   c   c		                                                                                           %
+#%       / \ / \ / \                                                                                               %
+#%      c   c   c   c		                                                                                       %
+#%      |   |   |   |                                                                                              %
+#%      c   c   c   c		                                                                                       %
+#%     / \ / \ / \ / \                                                                                             %
+#%    c   c   c   c   c	                                                                                           %
+#%    |   |   |   |   |                                                                                            %
+#%    c   c   c   c   c	                                                                                           %
+#%     \ / \ / \ / \ /                                                                                             %
+#%      c   c   c   c                                                                                              %
+#%                                                                                                                 %
+#%                                                                                                                 %
+#%  	In this case, L=4; the unity is a bencene.                                                                 %
+#%                                                                                                                 %
+#%                                                                                                                 %
+#%  	if l1 > 0 then the triangulene of size (l1|0,0,0) is eliminated from the top corner                        %
+#%  	if l2 > 0 then the triangulene of size (l2|0,0,0) is eliminated from the bottom left corner                %
+#%      if l3 > 0 then the triangulene of size (l3|0,0,0) is eliminated from the bottom rigth corner               %
+#%                                                                                                                 %
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+

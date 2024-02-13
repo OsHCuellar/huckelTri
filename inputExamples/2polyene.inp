@@ -1,0 +1,22 @@
+ input title
+
+ F #pbc?  #if F, then open boundary conditions (obc). No extra restrictions. OPEN
+          #if T, then periodic boundary conditions (pbc). The number of atoms must be even. CLOSED
+
+           4 #Number of atoms
+
+           0  #Alpha
+          -1 #Beta +
+          -1 #Beta -
+
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+#%                                %                                     %
+#%       EXAMPLE 1 :              %      EXAMPLE 2 :                    %
+#%--------------------------------%-------------------------------------%                                
+#%    10 atoms with obc           %   10 atoms with pbc                 %
+#%                                %                                     %
+#%    o-o-o-o-o-o-o-o-o-o         %       o-o-o-o-o                     %
+#%                                %       |       |                     %
+#%                                %       o-o-o-o-o                     %
+#%                                %                                     %
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
